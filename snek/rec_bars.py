@@ -23,11 +23,12 @@ def add_rec_bars(ax,begin,end):
         ax  -- an axis with recession bars added
         plt -- pyplot command limiting the vertical scope of plot to input specs """
 
-
     bot, top = ax.get_ylim()
     rec_bars = pdr.DataReader('USREC','fred',begin,end)
     rec_bars = np.multiply(rec_bars,top)
-    ax.fill_between(rec_bars.index,np.ravel(rec_bars.as_matrix()),np.zeros((len(rec_bars),))+bot,alpha=.2,color='k')
-    plt.ylim([bot,top])
+    
+    for i in range(len(rec_bars.index)):
+        if rec_bars['USREC'][i] == 0:
+            rec_bars['USREC'][i] += bot
 
     return ax, plt
