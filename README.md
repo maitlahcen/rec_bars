@@ -8,7 +8,6 @@ This python module easily allows one to add NBER recession bars to matplotlib gr
 If using miniconda3, install to "~/miniconda3/lib/python3.6/site-packages".
 
 ### Source Code
-
 ```python
 # Author: Travis Cyronek
 # Date: 30 August 2017
@@ -53,7 +52,6 @@ def add_rec_bars(ax,begin=datetime.datetime(1854,12,1),end=datetime.datetime.tod
 ```    
 
 ### Example
-
 ```python
 # Imports
 import datetime
