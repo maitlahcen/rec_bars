@@ -82,5 +82,4 @@ plt.title('Real Gross Domestic Product (GDPC1)')
 plt.show()
 ```
 
-![Alt text](/images/rGDP.png?raw=true "Original Title")
-<img src="https://github.com/tcyronek/snek/blob/master/images/rGDP.png" width="800" height="550">
+<img src="https://github.com/tcyronek/snek/blob/master/images/rGDP.png" width="700" height="450">
