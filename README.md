@@ -81,4 +81,4 @@ plt.title('Real Gross Domestic Product (GDPC1)')
 plt.show()
 ```
 
-![Alt text](images/rec_bars_test.png?raw=true "Test of Recession Bars")
+![Alt text](images/rec_bars_example.png?raw=true "Test of Recession Bars")
