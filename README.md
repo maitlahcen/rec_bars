@@ -81,4 +81,4 @@ plt.title('Real Gross Domestic Product (GDPC1)')
 plt.show()
 ```
 
-<img src="https://github.com/tcyronek/snek/blob/master/images/rGDP.png" width="700" height="450">
+![Alt text](images/rec_bars_test.png?raw=true "Test of Recession Bars")
