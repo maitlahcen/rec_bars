@@ -83,3 +83,4 @@ plt.show()
 ```
 
 ![Alt text](/images/rGDP.png?raw=true "Original Title")
+<img src="https://github.com/tcyronek/snek/blob/master/images/rGDP.png" width="100" height="150">
