@@ -11,17 +11,21 @@ import pandas_datareader as pdr
 
 def add_rec_bars(ax,begin=datetime.datetime(1854,12,1),end=datetime.datetime.today(),color='k',alpha=.2):
 
-    """ Description: This function adds recession bars to a matplotlib graph.
-        To ensure it runs, the required packages are imported in this module.
-        Note that the import names may differ from the user's, and so imports
-        may need to be renamed (or changed here in the source code). """
+    """ 
+    Description: This function adds recession bars to a matplotlib graph.
+    To ensure it runs, the required packages are imported in this module.
+    Note that the import names may differ from the user's, and so imports
+    may need to be renamed (or changed here in the source code).
 
-    """ Inputs:
-        ax          -- the axis object that recession bars want to be added to
-        begin / end -- datetime objects corresponding to the period of interest """
+    Inputs:
+    ax          -- the axis object that recession bars want to be added to
+    begin / end -- datetime objects corresponding to the period of interest
+    color       -- color of the recession bars
+    alpha       -- desired fade of bars
 
-    """ Outputs:
-        ax  -- an axis with recession bars added """
+    Outputs:
+    ax  -- an axis with recession bars added 
+    """
 
     bot, top = ax.get_ylim()
     rec_bars = pdr.DataReader('USREC','fred',begin,end)
