@@ -35,4 +35,4 @@ plt.title('Real Gross Domestic Product (GDPC1)')
 plt.show()
 ```
 
-![Alt text](/figures/rGDP.png?raw=true "Original Title")
+![Alt text](/images/rGDP.png?raw=true "Original Title")
