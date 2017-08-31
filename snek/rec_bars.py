@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import pandas_datareader as pdr
 
 
-def add_rec_bars(ax,begin=datetime.datetime(1854.12,01),end=datetime.datetime.today()):
+def add_rec_bars(ax,begin=datetime.datetime(1854,12,01),end=datetime.datetime.today()):
 
     """ Description: This function adds recession bars to a matplotlib graph.
         To ensure it runs, the required packages are imported in this module.
