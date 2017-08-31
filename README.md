@@ -32,9 +32,8 @@ def add_rec_bars(ax,begin=datetime.datetime(1854,12,1),end=datetime.datetime.tod
         ax          -- the axis object that recession bars want to be added to
         begin / end -- datetime objects corresponding to the period of interest """
 
-    """ Outputs:
-        ax  -- an axis with recession bars added
-        plt -- pyplot command limiting the vertical scope of plot to input specs """
+    """ Output:
+        ax  -- an axis with recession bars added """
 
     bot, top = ax.get_ylim()
     rec_bars = pdr.DataReader('USREC','fred',begin,end)
@@ -44,13 +43,13 @@ def add_rec_bars(ax,begin=datetime.datetime(1854,12,1),end=datetime.datetime.tod
         if rec_bars['USREC'][i] == 0:
             rec_bars['USREC'][i] += bot
             
-    plt.ylim([bot,top])        
+    ax.set_ylim([bot,top])        
     ax.fill_between(rec_bars.index,
                     np.ravel(rec_bars.as_matrix()),
                     np.zeros((len(rec_bars),))+bot,
                     linewidth=0,color=color,alpha=alpha)
         
-    return ax, plt
+    return ax
 ```    
 
 ### Example
