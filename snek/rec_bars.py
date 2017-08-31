@@ -30,5 +30,11 @@ def add_rec_bars(ax,begin,end):
     for i in range(len(rec_bars.index)):
         if rec_bars['USREC'][i] == 0:
             rec_bars['USREC'][i] += bot
-
+            
+    plt.ylim([bot,top])        
+    ax.fill_between(rec_bars.index,
+                    np.ravel(rec_bars.as_matrix()),
+                    np.zeros((len(rec_bars),))+bot,
+                    linewidth=0,alpha=.2,color='k')
+        
     return ax, plt
