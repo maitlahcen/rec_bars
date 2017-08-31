@@ -8,11 +8,9 @@ If using miniconda3, install to "~/miniconda3/lib/python3.6/site-packages".
 
 ```python
 # Imports
+import datetime
 import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
 import pandas_datareader as pdr
-import statsmodels.api as sm
 import snek.rec_bars as snek
 
 # Set Dates
