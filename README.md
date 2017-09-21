@@ -26,7 +26,7 @@ def add_rec_bars(ax,begin=datetime.datetime(1854,12,1),end=datetime.datetime.tod
     Description: This function adds recession bars to a matplotlib graph. The
     function is intended to be used with Pandas DataFrames / Series where the
     indexes are datetime objects (this ensures that the recession bars are
-    added along the appropriate axis on the correct dimension.
+    added along the appropriate axis on the correct dimension).
 
     Inputs:
     ax          -- (axis object) the axis that recession bars want to be added to
