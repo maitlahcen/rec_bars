@@ -35,7 +35,7 @@ def add_rec_bars(ax,begin=datetime.datetime(1854,12,1),end=datetime.datetime.tod
     alpha       -- (float) desired fade of bars
 
     Outputs:
-    ax  -- (axis object) an axis with recession bars added
+    ax          -- (axis object) an axis with recession bars added
     """
 
     bot, top = ax.get_ylim()
