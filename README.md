@@ -1,11 +1,13 @@
 # snek
 A Python package that is hopefully useful to someone other than me.
 
+## Installation
+If using miniconda3, install to "~/miniconda3/lib/python3.6/site-packages".
+
 ## rec_bars.py
 This python module easily allows one to add NBER recession bars to matplotlib graphs within its familiar API. At the minimum (after an appropriate import) one must simply include `snek.add_rec_bars(ax)`, where "ax" is the axis on which one wants to add recession bars, in order to achieve the desired result.
 
-### Installation
-If using miniconda3, install to "~/miniconda3/lib/python3.6/site-packages".
+
 
 ### Source Code
 ```python
