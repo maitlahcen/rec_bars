@@ -11,8 +11,8 @@ This python module easily allows one to add NBER recession bars to matplotlib gr
 
 ### Source Code
 ```python
-# Author: Travis Cyronek
-# Date: 30 August 2017
+# Author:  Travis Cyronek
+# Date:    30 August 2017
 # Purpose: Add NBER recession bars to matplotlib graphs
 
 
