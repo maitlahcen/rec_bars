@@ -51,7 +51,7 @@ def add_rec_bars(ax, begin=datetime.datetime(1854,12,1), end=datetime.datetime.t
     ax.fill_between(rec_bars.index,
                     np.ravel(rec_bars.as_matrix()),
                     np.zeros((len(rec_bars),))+bot,
-                    linewidth=0,color=color,alpha=alpha)
+                    linewidth=0, color=color, alpha=alpha)
 
     return ax
 ```    
@@ -65,11 +65,11 @@ import pandas_datareader as pdr
 import snek.rec_bars as snek
 
 # Set Dates
-start = datetime.datetime(1947,1,1)
+start = datetime.datetime(1947, 1, 1)
 end   = datetime.datetime.today()
 
 # Pull in some data from FRED
-rGDP = pdr.DataReader('GDPC1','fred',start,end)
+rGDP = pdr.DataReader('GDPC1', 'fred', start, end)
 
 # Plot
 fig = plt.figure()
