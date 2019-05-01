@@ -22,7 +22,7 @@ import numpy as np
 import pandas_datareader as pdr
 
 
-def add_rec_bars(ax,begin=datetime.datetime(1854,12,1),end=datetime.datetime.today(),color='k',alpha=.2):
+def add_rec_bars(ax, begin=datetime.datetime(1854,12,1), end=datetime.datetime.today(), color='k', alpha=.2):
 
     """
     Description: This function adds recession bars to a matplotlib graph. The
@@ -41,7 +41,7 @@ def add_rec_bars(ax,begin=datetime.datetime(1854,12,1),end=datetime.datetime.tod
     """
 
     bot, top = ax.get_ylim()
-    rec_bars = pdr.DataReader('USREC','fred',begin,end)
+    rec_bars = pdr.DataReader('USREC', 'fred', begin, end)
     rec_bars = np.multiply(rec_bars,top)
     for i in range(len(rec_bars.index)):
         if rec_bars['USREC'][i] == 0:
@@ -78,8 +78,8 @@ ax.plot(rGDP)
 ax.yaxis.grid()
 ax.set_xlabel('Year')
 ax.set_ylabel('Billions of Chained 2009 Dollars')
-snek.add_rec_bars(ax,start,end)
-plt.xlim([start,end])
+snek.add_rec_bars(ax, start, end)
+plt.xlim([start, end])
 plt.title('Real Gross Domestic Product (GDPC1)')
 plt.show()
 ```
