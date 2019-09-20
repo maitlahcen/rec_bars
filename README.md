@@ -1,6 +1,3 @@
-# snek
-A Python package that is hopefully useful to someone other than me.
-
 ## Installation
 If using miniconda3, install to "~/miniconda3/lib/python3.6/site-packages".
 
