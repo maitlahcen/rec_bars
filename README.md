@@ -5,7 +5,7 @@ A Python package that is hopefully useful to someone other than me.
 If using miniconda3, install to "~/miniconda3/lib/python3.6/site-packages".
 
 ## rec_bars.py
-This python module easily allows one to add NBER recession bars to matplotlib graphs within its familiar API. At the minimum (after an appropriate import) one must simply include `snek.add_rec_bars(ax)`, where "ax" is the axis on which one wants to add recession bars, in order to achieve the desired result.
+This python module easily allows one to add NBER recession bars to matplotlib graphs within its familiar API. At the minimum (after an appropriate import) one must simply include `rec_bars.add_rec_bars(ax)`, where "ax" is the axis on which one wants to add recession bars, in order to achieve the desired result.
 
 
 
@@ -62,7 +62,7 @@ def add_rec_bars(ax, begin=datetime.datetime(1854,12,1), end=datetime.datetime.t
 import datetime
 import matplotlib.pyplot as plt
 import pandas_datareader as pdr
-import snek.rec_bars as snek
+import rec_bars
 
 # Set Dates
 start = datetime.datetime(1947, 1, 1)
@@ -78,7 +78,7 @@ ax.plot(rGDP)
 ax.yaxis.grid()
 ax.set_xlabel('Year')
 ax.set_ylabel('Billions of Chained 2009 Dollars')
-snek.add_rec_bars(ax, start, end)
+rec_bars.add_rec_bars(ax, start, end)
 plt.xlim([start, end])
 plt.title('Real Gross Domestic Product (GDPC1)')
 plt.show()
